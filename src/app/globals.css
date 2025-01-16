@@ -46,8 +46,13 @@ h1 {
 
 
 
+.icon-pic {
+  transition: scale 0.3s;
+}
 
-
+.icon-pic:hover {
+  scale: 1.2;
+}
 
 
 

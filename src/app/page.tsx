@@ -8,6 +8,7 @@ export default function Home() {
     <main>
       <h1>
         <img 
+          className = "icon-pic"
           src="/accountcircle.svg" 
           alt="accountcircle" 
           style={{
