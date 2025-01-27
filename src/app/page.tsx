@@ -33,9 +33,13 @@ export default function Home() {
         id="arrowdown"
         />
       </div>
-      <hr/>
-      <p>Hello</p>
-    </main>
+      <hr id="hr1"/>
+      <div id="technologies">
+        <p>Here are my Favorite Technologies</p>
+        
+      </div>
+      <hr id="hr2"/>
+      </main>
   );
 }
 

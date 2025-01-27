@@ -36,7 +36,7 @@ body {
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   flex-direction: column;
-  border: 2px solid rgb(255, 1, 1); /* Add a border to the container */
+  /* border: 2px solid rgb(255, 1, 1);  */
   position: relative;
   margin-top: 1rem;
 }
@@ -94,6 +94,24 @@ h1 {
 }
 
 
-hr {
-  width: 100vw;
+
+#hr1 {
+  width: 100vw
+}
+
+#hr2 {
+  width: auto;
+}
+
+#technologies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+
+p {
+  font-size: 1.2rem;
 }
