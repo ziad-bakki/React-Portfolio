@@ -7,16 +7,16 @@
 /* Custom CSS */
 
 :root {
-  --background: #ffffff;
+  --background: #d7c7c7;
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --background: #202124;
+    --background: black;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
@@ -27,6 +27,7 @@ body {
   align-items: center;
   height: 100vh;
   flex-direction: column;
+  font-family: "Roboto Condensed", serif;
 
 }
 
@@ -36,7 +37,7 @@ body {
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   flex-direction: column;
-  border: 2px solid rgb(255, 1, 1); 
+  /* border: 2px solid rgb(255, 1, 1);  */
   position: relative;
   margin-top: 1rem;
 }
@@ -99,7 +100,8 @@ h1 {
 
 
 #hr1 {
-  width: 90vw;
+  width: 99vw;
+
 
 }
 
@@ -124,13 +126,14 @@ h1 {
 
 #technologies .technology {
   height: 7rem;
-
+  font-weight: 700;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  background-color: rgb(60, 61, 64);
+  background-color: #b9ad57;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -140,6 +143,6 @@ p {
 
 
 #tech_image {
-  height: 80%;
+  height: 70%;
   object-fit:contain;
 } 
