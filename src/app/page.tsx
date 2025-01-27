@@ -6,7 +6,7 @@ import "./globals.css";
 
 export default function Home() {
   return (
-    <main>
+    <main >
 
       <div className="landing-container">
       <h1 id="landing">
@@ -35,17 +35,17 @@ export default function Home() {
         />
       </div>
       <hr style={{backgroundColor:"black", height: "1px", border: "none"}} id="hr1"/>
+      <p style={{textAlign:"center"}}>Here are my Favorite Technologies</p>
       <div id="technologies">
-        {/* <p>Here are my Favorite Technologies</p> */}
-        <div className="technology" style={{flex: 2, textAlign: "center"}}> 1</div>
-        <div className="technology" style={{flex: 2, textAlign: "center"}}> 1</div>
-        <div className="technology" style={{flex: 2, textAlign: "center"}}> 1</div>
+        <div className="technology" style={{flex: 2, textAlign: "center"}}><img src="/pythonlogo.svg" id="tech_image"/></div>
+        <div className="technology" style={{flex: 2, textAlign: "center"}}><img src="/tslogo.svg" id="tech_image"/></div>
+        <div className="technology" style={{flex: 2, textAlign: "center"}}><img src="/csharplogo.svg" id="tech_image"/></div>
         
       </div>
       <div id="technologies">
-        <div className="technology" style={{flex: 2, textAlign: "center"}}> 1</div>
-        <div className="technology" style={{flex: 2, textAlign: "center"}}> 1</div>
-        <div className="technology" style={{flex: 2, textAlign: "center"}}> 1</div>
+        <div className="technology" style={{flex: 2, textAlign: "center"}}><img src="/cpplogo.svg" id="tech_image"/></div>
+        <div className="technology" style={{flex: 2, textAlign: "center"}}><img src="/giticon.svg" id="tech_image"/></div>
+        <div className="technology" style={{flex: 2, textAlign: "center"}}><img src="/reactlogo.svg" id="tech_image"/></div>
       </div>
       <hr id="hr2"/>
       </main>

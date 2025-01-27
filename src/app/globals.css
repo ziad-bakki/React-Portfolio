@@ -22,7 +22,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: 'Google Sans', sans-serif;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -31,12 +31,12 @@ body {
 }
 
 .landing-container {
-  height: 100vh; /* Full viewport height */
+  height: 98vh; /* Full viewport height */
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   flex-direction: column;
-  /* border: 2px solid rgb(255, 1, 1);  */
+  border: 2px solid rgb(255, 1, 1); 
   position: relative;
   margin-top: 1rem;
 }
@@ -59,6 +59,8 @@ h1 {
 
 
 .icon-pic {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
   transition: scale 0.3s;
 }
 
@@ -84,6 +86,7 @@ h1 {
   background-color: transparent;
   padding: 1vh;
   margin-top: auto;
+  margin-bottom: 1rem;
 
 }
 
@@ -96,7 +99,7 @@ h1 {
 
 
 #hr1 {
-  width: 100vw;
+  width: 90vw;
 
 }
 
@@ -112,19 +115,31 @@ h1 {
   margin-top: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  gap: 1rem;
+  margin-bottom: 1rem;
+  gap: 2rem;
+
+
+  
 }
 
 #technologies .technology {
   height: 7rem;
+
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   border-radius: 10px;
   background-color: rgb(60, 61, 64);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 p {
   font-size: 1.2rem;
 }
+
+
+#tech_image {
+  height: 80%;
+  object-fit:contain;
+} 
