@@ -24,7 +24,8 @@ export default function Home() {
             marginBottom: "0.5em",
           }} 
         />
-        Ziad Bakki - Software Engineer
+        Ziad Bakki
+        <p> Incoming SWE Intern @Rocket Mortgage</p>
         
       </h1>
       <img 
@@ -33,10 +34,18 @@ export default function Home() {
         id="arrowdown"
         />
       </div>
-      <hr id="hr1"/>
+      <hr style={{backgroundColor:"black", height: "1px", border: "none"}} id="hr1"/>
       <div id="technologies">
-        <p>Here are my Favorite Technologies</p>
+        {/* <p>Here are my Favorite Technologies</p> */}
+        <div className="technology" style={{flex: 2, textAlign: "center"}}> 1</div>
+        <div className="technology" style={{flex: 2, textAlign: "center"}}> 1</div>
+        <div className="technology" style={{flex: 2, textAlign: "center"}}> 1</div>
         
+      </div>
+      <div id="technologies">
+        <div className="technology" style={{flex: 2, textAlign: "center"}}> 1</div>
+        <div className="technology" style={{flex: 2, textAlign: "center"}}> 1</div>
+        <div className="technology" style={{flex: 2, textAlign: "center"}}> 1</div>
       </div>
       <hr id="hr2"/>
       </main>

@@ -96,7 +96,8 @@ h1 {
 
 
 #hr1 {
-  width: 100vw
+  width: 100vw;
+
 }
 
 #hr2 {
@@ -107,10 +108,22 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  text-align: center;
   margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  gap: 1rem;
 }
 
+#technologies .technology {
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(60, 61, 64);
+}
 
 p {
   font-size: 1.2rem;
