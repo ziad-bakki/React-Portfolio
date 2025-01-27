@@ -30,6 +30,16 @@ body {
 
 }
 
+.landing-container {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column;
+  border: 2px solid rgb(255, 1, 1); /* Add a border to the container */
+  position: relative;
+  margin-top: 1rem;
+}
 
 
 
@@ -41,8 +51,10 @@ h1 {
   font-weight: 500;
   text-align: center;
   align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: column;
+
 
 
 
@@ -58,8 +70,30 @@ h1 {
 
 }
 
+#landing { 
+  flex-grow: 1; /* Allow h1 to take up remaining space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-.highlight { 
-  /* background-color: yellow; */
-  color: maroon;
+#arrowdown {
+  border: 0px solid black;
+  border-radius: 100%;
+  background-color: transparent;
+  padding: 1vh;
+  margin-top: auto;
+
+}
+
+#arrowdown:hover {
+  
+  background-color: #000000;
+  transition: background-color 0.3s;
+}
+
+
+hr {
+  width: 100vw;
 }

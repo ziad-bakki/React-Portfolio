@@ -7,7 +7,9 @@ import "./globals.css";
 export default function Home() {
   return (
     <main>
-      <h1>
+
+      <div className="landing-container">
+      <h1 id="landing">
         <img 
           className = "icon-pic"
           src="/linkedinimage.svg" 
@@ -23,9 +25,16 @@ export default function Home() {
           }} 
         />
         Ziad Bakki - Software Engineer
+        
       </h1>
-          
-
+      <img 
+        src="/arrowdown.svg"
+        alt="arrowdown"
+        id="arrowdown"
+        />
+      </div>
+      <hr/>
+      <p>Hello</p>
     </main>
   );
 }
