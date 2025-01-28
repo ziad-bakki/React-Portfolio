@@ -151,6 +151,12 @@ h1 {
   border: 1px solid #000000;
   background-color: #f7f7f7;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  opacity: 0.7;  
+  transition: opacity 0.3s;
+}
+
+#technologies .technology:hover{
+  opacity: 1;
 }
 
 p {
