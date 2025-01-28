@@ -3,11 +3,78 @@
 
 import "./globals.css";
 import Image from "next/image";
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+import { useCallback } from "react";
+import { Engine } from "tsparticles-engine";
+import { loadSlim } from "tsparticles-slim";
+
+
 
 export default function Home() {
-  return (
-    <main>
+  const particlesInit = useCallback(async (engine: Engine) => {
+    await loadSlim(engine);
+  }, []);
 
+  function Effects() {
+    return (
+      <Particles
+        id="tsparticles"
+        init={particlesInit}
+        options={{
+          background: {
+            color: {
+              value: "#070619",
+            },
+          },
+          fpsLimit: 120,
+          particles: {
+            color: {
+              value: "#ffffff",
+            },
+            links: {
+              color: "#ffffff",
+              distance: 150,
+              enable: true,
+              opacity: 0.5,
+              width: 1,
+            },
+            move: {
+              enable: true,
+              speed: 1,
+              direction: "none",
+              random: false,
+              straight: false,
+              outModes: {
+                default: "bounce",
+              },
+            },
+            number: {
+              density: {
+                enable: true,
+                area: 800,
+              },
+              value: 45,
+            },
+            opacity: {
+              value: 0.2,
+            },
+            size: {
+              value: { min: 1, max: 5 },
+            },
+          },
+          detectRetina: true,
+        }}
+      />
+    );
+  }
+  return (
+    
+    <main>
+      <div className="background">
+        <Effects />
+      </div>
+      
       <div className="landing-container">
       <h1 id="landing">
         <img
@@ -58,7 +125,7 @@ export default function Home() {
           <Image src="/reactlogo.svg" id="tech_image" alt="react logo"  width={50} height={50}/>React
         </div>
       </div>
-      {/* </div> */}
+
         
       </main>
   );

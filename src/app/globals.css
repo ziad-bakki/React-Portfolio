@@ -7,8 +7,8 @@
 /* Custom CSS */
 
 :root {
-  --background: #d7c7c7;
-  --foreground: #171717;
+  --background: #070619;
+  --foreground: #ffffff;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -29,6 +29,15 @@ body {
   flex-direction: column;
   font-family: "Roboto Condensed", serif;
 
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .landing-container {
@@ -60,6 +69,7 @@ h1 {
 
 
 .icon-pic {
+  border: 1px solid #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   height: 10rem;
   width: 10rem;
@@ -129,6 +139,7 @@ h1 {
 }
 
 #technologies .technology {
+  color: black;
   height: 7rem;
   font-weight: 700;
   display: flex;
@@ -137,7 +148,8 @@ h1 {
   align-items: center;
   text-align: center;
   border-radius: 10px;
-  background-color: #b9ad57;
+  border: 1px solid #000000;
+  background-color: #f7f7f7;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
