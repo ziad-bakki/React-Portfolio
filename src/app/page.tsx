@@ -89,7 +89,8 @@ export default function Home() {
         <p>📍East Lansing, Michigan</p>
         
       </h1>
-      <Image 
+      <Image
+        onClick={() => ArrowClick()}
         src="/arrowdown.svg"
         alt="arrowdown"
         id="arrowdown"
@@ -133,7 +134,13 @@ export default function Home() {
 
 
 
-  
+export function ArrowClick() {
+  window.scrollTo({
+    top: screen.height,
+    behavior: "smooth",
+  });
+  console.log("Arrow Clicker");
+}
 
 
 
