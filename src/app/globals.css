@@ -61,12 +61,16 @@ h1 {
 
 .icon-pic {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
-  transition: scale 0.3s;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  transition: height 0.3s, width 0.3s;
 }
 
 .icon-pic:hover {
-  scale: 1.2;
+  height: 12rem;
+  width: 12rem;
+
 }
 
 

@@ -1,53 +1,64 @@
 "use client";
 
-import { useState } from "react";
-import "./globals.css";
 
+import "./globals.css";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main >
+    <main>
 
       <div className="landing-container">
       <h1 id="landing">
-        <img 
+        <img
           className = "icon-pic"
           src="/linkedinimage.svg" 
           alt="accountcircle" 
-          style={{
-            width: "5em", // Scale image to fit text size
-            height: "5em",
-            marginRight: "0.5em", // Add space between the image and text
-            fontSize: "2em",
-            margin: "0",
-            borderRadius: "180px",
-            marginBottom: "0.5em",
-          }} 
+          height={1}
+          width={1}
         />
         Ziad Bakki
         <p>🚀Incoming SWE Intern @Rocket Mortgage</p>
         <p>📍East Lansing, Michigan</p>
         
       </h1>
-      <img 
+      <Image 
         src="/arrowdown.svg"
         alt="arrowdown"
         id="arrowdown"
+        width={1}
+        height={1}
+        style={{
+          width: "3rem",
+          height: "3rem",
+        }}
         />
       </div>
       <hr style={{backgroundColor:"", height: "1px", border: "none"}} id="hr1"/>
       {/* <p style={{textAlign:"center", fontWeight: 500, marginTop: "1rem"}}>Here are my Favorite Technologies</p> */}
       <div id="technologies">
-        <div className="technology" style={{flex: 2, textAlign: "center"}}><img src="/pythonlogo.svg" id="tech_image"/>Python</div>
-        <div className="technology" style={{flex: 2, textAlign: "center"}}><img src="/tslogo.svg" id="tech_image"/>Typescript</div>
-        <div className="technology" style={{flex: 2, textAlign: "center"}}><img src="/csharplogo.svg" id="tech_image"/>C#</div>
-        
+        <div className="technology" style={{flex: 2, textAlign: "center"}}>
+          <Image src="/pythonlogo.svg" id="tech_image" alt="python-logo" width={50} height={50}/>Python
+        </div>
+        <div className="technology" style={{flex: 2, textAlign: "center"}}>
+          <Image src="/tslogo.svg" id="tech_image" alt="typescript-logo"  width={50} height={50}/>Typescript
+        </div>
+        <div className="technology" style={{flex: 2, textAlign: "center"}}>
+          <Image src="/csharplogo.svg" id="tech_image" alt="c#-logo"  width={50} height={50}/>C#
+        </div>
       </div>
       <div id="technologies">
-        <div className="technology" style={{flex: 2, textAlign: "center"}}><img src="/cpplogo.svg" id="tech_image"/>C++</div>
-        <div className="technology" style={{flex: 2, textAlign: "center"}}><img src="/giticon.svg" id="tech_image"/>Git</div>
-        <div className="technology" style={{flex: 2, textAlign: "center"}}><img src="/reactlogo.svg" id="tech_image"/>React</div>
+        <div className="technology" style={{flex: 2, textAlign: "center"}}>
+          <Image src="/cpplogo.svg" id="tech_image" alt="c++ logo"  width={50} height={50}/>C++
+        </div>
+        <div className="technology" style={{flex: 2, textAlign: "center"}}>
+          <Image src="/giticon.svg" id="tech_image" alt="git logo"  width={50} height={50}/>Git
+        </div>
+        <div className="technology" style={{flex: 2, textAlign: "center"}}>
+          <Image src="/reactlogo.svg" id="tech_image" alt="react logo"  width={50} height={50}/>React
+        </div>
       </div>
+      {/* </div> */}
         
       </main>
   );
