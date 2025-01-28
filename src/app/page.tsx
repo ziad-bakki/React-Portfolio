@@ -87,12 +87,13 @@ export default function Home() {
       <h1 id="landing">
         <Image
           className = "icon-pic"
-          src="/linkedinimage.svg" 
-          alt="accountcircle" 
-          height={1}
-          width={1}
-        />
-        Ziad Bakki
+          // src="/linkedinimage.svg" 
+            src="/ziad.jpeg"
+            alt="accountcircle" 
+            height={200}
+            width={200}
+          />
+          Ziad Bakki
         <p>🚀Incoming SWE Intern @Rocket Mortgage</p>
         <p>📍East Lansing, Michigan</p>
         
