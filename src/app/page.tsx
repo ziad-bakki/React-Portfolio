@@ -80,7 +80,7 @@ export default function Home() {
     <main>
       <title>{"Ziad's Portfolio"}</title>
       <div className="background">
-        <Effects />
+        {/* <Effects /> */}
       </div>
       
       <div className="landing-container">
@@ -134,6 +134,23 @@ export default function Home() {
         <div className="technology" style={{flex: 2, textAlign: "center"}}>
           <Image src="/reactlogo.svg" id="tech_image" alt="react logo"  width={50} height={50}/>React
         </div>
+      </div>
+      
+      <br/>
+      
+      <div className="experiences" style={{border:"solid red", borderWidth: "1px"}}>
+        <div className="title">Experiences</div>
+        <div id="test">
+          <a>one</a>
+          <a>two</a>
+          <a>three</a>
+          <a>four</a>
+          <a>one</a>
+          <a>two</a>
+          <a>three</a>
+          <a>four</a>
+
+        </div>        
       </div>
 
         

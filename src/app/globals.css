@@ -120,7 +120,8 @@ h1 {
 }
 
 #hr2 {
-  width: auto;
+  width: 13vw;
+  background-color: white;
 }
 
 #technologies {
@@ -159,12 +160,48 @@ h1 {
   opacity: 1;
 }
 
-p {
-  font-size: 1.2rem;
-}
+
 
 
 #tech_image {
   height: 70%;
   object-fit:contain;
 } 
+
+
+.experiences {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+.experiences .title{
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.experiences .experience {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+#test {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid red;
+}
+
+#test a {
+  border: 1px solid red;
+}
