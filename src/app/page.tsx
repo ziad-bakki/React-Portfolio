@@ -78,7 +78,7 @@ export default function Home() {
   return (
     
     <main>
-      <title>Ziad's Portfolio</title>
+      <title>{"Ziad's Portfolio"}</title>
       <div className="background">
         <Effects />
       </div>
