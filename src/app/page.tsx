@@ -4,7 +4,6 @@
 import "./globals.css";
 import Image from "next/image";
 import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
 import { useCallback } from "react";
 import { Engine } from "tsparticles-engine";
 import { loadSlim } from "tsparticles-slim";
@@ -68,6 +67,14 @@ export default function Home() {
       />
     );
   }
+
+  function ArrowClick() {
+    window.scrollTo({
+      top: screen.height,
+      behavior: "smooth",
+    });
+    console.log("Arrow Clicker");
+  }
   return (
     
     <main>
@@ -77,7 +84,7 @@ export default function Home() {
       
       <div className="landing-container">
       <h1 id="landing">
-        <img
+        <Image
           className = "icon-pic"
           src="/linkedinimage.svg" 
           alt="accountcircle" 
@@ -134,13 +141,7 @@ export default function Home() {
 
 
 
-export function ArrowClick() {
-  window.scrollTo({
-    top: screen.height,
-    behavior: "smooth",
-  });
-  console.log("Arrow Clicker");
-}
+
 
 
 
