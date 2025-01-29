@@ -7,6 +7,7 @@ import Particles from "react-tsparticles";
 import { useCallback } from "react";
 import { Engine } from "tsparticles-engine";
 import { loadSlim } from "tsparticles-slim";
+import { link } from "fs";
 
 
 
@@ -70,7 +71,7 @@ export default function Home() {
 
   function ArrowClick() {
     window.scrollTo({
-      top: screen.height,
+      top: screen.height-150,
       behavior: "smooth",
     });
     console.log("Arrow Clicker");
@@ -87,11 +88,10 @@ export default function Home() {
       <h1 id="landing">
         <Image
           className = "icon-pic"
-          // src="/linkedinimage.svg" 
-            src="/ziad.jpeg"
-            alt="accountcircle" 
-            height={200}
-            width={200}
+          src="/ziad.jpeg"
+          alt="accountcircle" 
+          height={200}
+          width={200}
           />
           Ziad Bakki
           <div className="bio">
@@ -113,7 +113,6 @@ export default function Home() {
         />
       </div>
       <hr style={{backgroundColor:"", height: "1px", border: "none"}} id="hr1"/>
-      {/* <p style={{textAlign:"center", fontWeight: 500, marginTop: "1rem"}}>Here are my Favorite Technologies</p> */}
       <div id="technologies">
         <div className="technology" style={{flex: 2, textAlign: "center"}}>
           <Image src="/pythonlogo.svg" id="tech_image" alt="python-logo" width={50} height={50}/>Python
@@ -143,14 +142,28 @@ export default function Home() {
         <hr id="hr2"/>
         <br/>
         <div className="project-div">
-          <div className="project-container" style={{flex:1}}>
+          <div onClick={() => {window.open("https://github.com/ziad-bakki/Tanweer-Energy-Solutions")}} className="project-container" style={{flex:1}}>
             <Image id="project-image" width={50} height={50} src={"/tanweerlogo3.svg"} alt="tanweerlogo"/>
             <div style={{marginTop:"2rem"}}>Solar Solutions Website</div>
           </div>
-          <div className="project-container" style={{flex:1}}>
-            <Image id="project-image" width={50} height={50} src={"/nasalogo.svg"} alt="tanweerlogo"/>
+          <div onClick={() => {window.open("https://github.com/ziad-bakki/GymAI")}} className="project-container" style={{flex:1}}>
+            <Image id="project-image" width={50} height={50} src={"/gymailogo2.svg"} alt="gymnasiumlogo"/>
+            <div style={{marginTop:"2rem"}}>AI Reinforcement Learning</div>
+          </div>
+          <div onClick={() => {window.open("https://github.com/ziad-bakki/online-python-compiler")}} className="project-container" style={{flex:1}}>
+            <Image id="project-image" width={50} height={50} src={"/pythonlogo.svg"} alt="pythonlogo"/>
+            <div style={{marginTop:"2rem"}}>Online Python Compiler</div>
+          </div>
+        </div>
+        <div className="project-div">
+          
+          <div onClick={() => {window.open("https://github.com/ziad-bakki/Nasa-Image-Parser")}} className="project-container" style={{flex:1}}>
+            <Image id="project-image" width={50} height={50} src={"/nasalogo.svg"} alt="nasalogo"/>
             <div style={{marginTop:"2rem"}}>NASA Daily Image Parser</div>
           </div>
+
+
+
         </div>
         
 
