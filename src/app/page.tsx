@@ -161,6 +161,11 @@ export default function Home() {
             <Image id="project-image" width={50} height={50} src={"/nasalogo.svg"} alt="nasalogo"/>
             <div style={{marginTop:"2rem"}}>NASA Daily Image Parser</div>
           </div>
+          <div onClick={() => {window.open("https://github.com/ziad-bakki/canadian-experience")}} className="project-container" style={{flex:1}}>
+            <Image id="project-image" width={50} height={50} src={"/sparty2.png"} alt="canadianexperience"/>
+            <div style={{marginTop:"2rem"}}>Dynamic Machine Animation for Canadian Experience</div>
+          </div>
+
 
 
 
