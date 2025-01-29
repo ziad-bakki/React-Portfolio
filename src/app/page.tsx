@@ -140,6 +140,8 @@ export default function Home() {
       <br/>
       <div className="projects">
         <h1 className="title">Projects</h1>
+        <hr id="hr2"/>
+        <br/>
         <div className="project-div">
           <div className="project-container" style={{flex:1}}>
             <Image id="project-image" width={50} height={50} src={"/tanweerlogo3.svg"} alt="tanweerlogo"/>
@@ -147,6 +149,7 @@ export default function Home() {
           </div>
           <div className="project-container" style={{flex:1}}>
             <Image id="project-image" width={50} height={50} src={"/nasalogo.svg"} alt="tanweerlogo"/>
+            <div style={{marginTop:"2rem"}}>NASA Daily Image Parser</div>
           </div>
         </div>
         
