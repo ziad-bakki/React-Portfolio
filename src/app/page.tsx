@@ -71,17 +71,25 @@ export default function Home() {
 
   function ArrowClick() {
     window.scrollTo({
-      top: screen.height-150,
+      // top: screen.height-150,
+      top: document.getElementById("technologies")?.offsetTop,
       behavior: "smooth",
     });
-    console.log("Arrow Clicker");
   }
+
+  
   return (
     
     <main>
       <title>{"Ziad's Portfolio"}</title>
       <div className="background">
         <Effects /> 
+      </div>
+      <div className="navbar">
+        <div className="content" style={{marginLeft: "5rem"}} onClick={() => {window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        } )}}>Home</div>
       </div>
       
       <div className="landing-container">
