@@ -141,8 +141,13 @@ export default function Home() {
       <div className="projects">
         <h1 className="title">Projects</h1>
         <div className="project-div">
-          <div className="project-container" style={{flex:1}}>s</div>
-          <div className="project-container" style={{flex:1}}>s</div>
+          <div className="project-container" style={{flex:1}}>
+            <Image id="project-image" width={50} height={50} src={"/tanweerlogo3.svg"} alt="tanweerlogo"/>
+            <div style={{marginTop:"2rem"}}>Solar Solutions Website</div>
+          </div>
+          <div className="project-container" style={{flex:1}}>
+            <Image id="project-image" width={50} height={50} src={"/nasalogo.svg"} alt="tanweerlogo"/>
+          </div>
         </div>
         
 
