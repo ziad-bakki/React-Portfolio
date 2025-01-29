@@ -80,7 +80,7 @@ export default function Home() {
     <main>
       <title>{"Ziad's Portfolio"}</title>
       <div className="background">
-        {/* <Effects /> */}
+        <Effects /> 
       </div>
       
       <div className="landing-container">
@@ -138,20 +138,7 @@ export default function Home() {
       
       <br/>
       
-      <div className="experiences" style={{border:"solid red", borderWidth: "1px"}}>
-        <div className="title">Experiences</div>
-        <div id="test">
-          <a>one</a>
-          <a>two</a>
-          <a>three</a>
-          <a>four</a>
-          <a>one</a>
-          <a>two</a>
-          <a>three</a>
-          <a>four</a>
-
-        </div>        
-      </div>
+      
 
         
       </main>

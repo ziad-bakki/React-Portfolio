@@ -169,7 +169,7 @@ h1 {
 } 
 
 
-.experiences {
+/* .experiences {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -194,14 +194,7 @@ h1 {
   margin-left: 5rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
-}
+} */
 
-#test {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border: 1px solid red;
-}
 
-#test a {
-  border: 1px solid red;
-}
+
