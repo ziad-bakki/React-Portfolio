@@ -94,9 +94,10 @@ export default function Home() {
             width={200}
           />
           Ziad Bakki
-        <p>🚀Incoming SWE Intern @Rocket Mortgage</p>
-        <p>📍East Lansing, Michigan</p>
-        
+          <div className="bio">
+            <p id="bio">🚀Incoming SWE Intern @Rocket Mortgage</p>
+            <p id="bio">📍East Lansing, Michigan</p>
+          </div>
       </h1>
       <Image
         onClick={() => ArrowClick()}
@@ -137,7 +138,16 @@ export default function Home() {
       </div>
       
       <br/>
-      
+      <div className="projects">
+        <h1 className="title">Projects</h1>
+        <div className="project-div">
+          <div className="project-container" style={{flex:1}}>s</div>
+          <div className="project-container" style={{flex:1}}>s</div>
+        </div>
+        
+
+
+      </div>
       
 
         
