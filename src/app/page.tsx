@@ -7,6 +7,7 @@ import Particles from "react-tsparticles";
 import { useCallback } from "react";
 import { Engine } from "tsparticles-engine";
 import { loadSlim } from "tsparticles-slim";
+import Link from 'next/link';
 
 
 
@@ -90,6 +91,7 @@ export default function Home() {
           top: 0,
           behavior: "smooth",
         } )}}>Home</div>
+        <Link href="/portfolio"><div className="content">Portfolio</div></Link>
       </div>
       
       <div className="landing-container">
@@ -164,7 +166,6 @@ export default function Home() {
           </div>
         </div>
         <div className="project-div">
-          
           <div onClick={() => {window.open("https://github.com/ziad-bakki/Nasa-Image-Parser")}} className="project-container" style={{flex:1}}>
             <Image id="project-image" width={50} height={50} src={"/nasalogo.svg"} alt="nasalogo"/>
             <div style={{marginTop:"2rem"}}>NASA Daily Image Parser</div>
@@ -173,14 +174,7 @@ export default function Home() {
             <Image id="project-image" width={50} height={50} src={"/sparty2.png"} alt="canadianexperience"/>
             <div style={{marginTop:"2rem"}}>Dynamic Machine Animation for Canadian Experience</div>
           </div>
-
-
-
-
         </div>
-        
-
-
       </div>
       
 

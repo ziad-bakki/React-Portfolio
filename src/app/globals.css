@@ -248,6 +248,7 @@ h1 {
   text-align: center;
   z-index: 99; /* Ensure navbar is on top */
   transition: background-color 0.5s;
+  gap: 3rem;
 
 }
 
