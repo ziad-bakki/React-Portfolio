@@ -20,7 +20,7 @@ export function ProjectCard({ title, description, tech, link }: ProjectCardProps
         {title}
         {link && (
           <span className="ml-2 text-neutral-600 transition-colors group-hover:text-neutral-400">
-            &nearr;
+            {'\u2197'}
           </span>
         )}
       </h3>

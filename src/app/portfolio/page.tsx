@@ -13,7 +13,7 @@ const projects = [
     description:
       "Browser-based tool that transcribes guitar audio into chords and tablature using Spotify's Basic Pitch ML model for pitch detection and a custom FFT-based chroma analysis pipeline.",
     tech: ["TypeScript", "TensorFlow.js", "Next.js"],
-    link: undefined,
+    link: "https://github.com/ziad-bakki/AI-Guitar-Transcription-Tool",
   },
   {
     title: "Tetris",
