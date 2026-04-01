@@ -1,11 +1,14 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "motion/react";
 
 const experiences = [
   {
     role: "Software Engineer",
     company: "Amazon Capstone Project",
+    logo: "/amazon.png",
+    logoBg: "bg-white",
     location: "East Lansing, MI",
     period: "Sep - Dec 2025",
     bullets: [
@@ -18,6 +21,7 @@ const experiences = [
   {
     role: "Software Engineer Intern",
     company: "Rocket Mortgage",
+    logo: "/rocketmortgage.png",
     location: "Detroit, MI",
     period: "May - Aug 2025",
     bullets: [
@@ -29,6 +33,7 @@ const experiences = [
   {
     role: "Full-Stack Developer",
     company: "Tanweer Energy Solutions",
+    logo: "/tanweer.png",
     location: "Baghdad, Iraq",
     period: "Jun 2024 - Jan 2025",
     bullets: [
@@ -86,20 +91,28 @@ export function ExperienceSection() {
 
               {/* Content card */}
               <div
-                className={`ml-8 sm:ml-0 sm:w-[calc(50%-2rem)] ${
-                  isLeft ? "sm:mr-auto sm:pr-0" : "sm:ml-auto sm:pl-0"
-                }`}
+                className={`ml-8 sm:ml-0 sm:w-[calc(50%-2rem)] ${isLeft ? "sm:mr-auto sm:pr-0" : "sm:ml-auto sm:pl-0"
+                  }`}
               >
                 <motion.div
                   className="rounded-lg border border-neutral-800 bg-neutral-900/50 p-5"
                   whileHover={{ borderColor: "rgb(82 82 82)" }}
                   transition={{ duration: 0.2 }}
                 >
-                  <div className="mb-1 flex flex-wrap items-baseline justify-between gap-2">
+                  <div className="mb-3 flex items-start justify-between gap-3">
                     <h3 className="text-lg font-semibold">
                       {exp.role}{" "}
                       <span className="text-neutral-400">@ {exp.company}</span>
                     </h3>
+                    <div className={`shrink-0 rounded-md px-2 py-1 ${exp.logoBg ?? ""}`}>
+                      <Image
+                        src={exp.logo}
+                        alt={exp.company}
+                        width={80}
+                        height={32}
+                        className="object-contain"
+                      />
+                    </div>
                   </div>
                   <div className="mb-3 flex flex-wrap items-center gap-x-3 gap-y-1">
                     <span className="font-mono text-sm text-neutral-500">
