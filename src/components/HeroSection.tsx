@@ -1,18 +1,27 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "motion/react";
 
 export function HeroSection() {
   return (
     <section className="flex min-h-screen items-center justify-center px-6">
       <div className="max-w-3xl text-center">
-        {/* Profile image placeholder — swap in your image later */}
         <motion.div
-          className="mx-auto mb-8 h-32 w-32 rounded-full bg-neutral-800"
+          className="mx-auto mb-8 h-40 w-40 overflow-hidden rounded-full"
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5, type: "spring", stiffness: 200 }}
-        />
+        >
+          <Image
+            src="/headshot.jpg"
+            alt="Ziad Bakki"
+            width={160}
+            height={160}
+            priority
+            className="h-full w-full object-cover"
+          />
+        </motion.div>
 
         <motion.h1
           className="mb-4 text-5xl font-bold tracking-tight sm:text-6xl"
