@@ -1,22 +1,51 @@
+"use client";
+
+import { motion } from "motion/react";
+
 export function HeroSection() {
   return (
     <section className="flex min-h-screen items-center justify-center px-6">
       <div className="max-w-3xl text-center">
         {/* Profile image placeholder — swap in your image later */}
-        <div className="mx-auto mb-8 h-32 w-32 rounded-full bg-neutral-800" />
+        <motion.div
+          className="mx-auto mb-8 h-32 w-32 rounded-full bg-neutral-800"
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.5, type: "spring", stiffness: 200 }}
+        />
 
-        <h1 className="mb-4 text-5xl font-bold tracking-tight sm:text-6xl">
+        <motion.h1
+          className="mb-4 text-5xl font-bold tracking-tight sm:text-6xl"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
           Ziad Bakki
-        </h1>
-        <p className="mb-6 text-xl text-neutral-400">
+        </motion.h1>
+        <motion.p
+          className="mb-6 text-xl text-neutral-400"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.35 }}
+        >
           Software Engineer
-        </p>
-        <p className="mx-auto max-w-xl text-neutral-500">
+        </motion.p>
+        <motion.p
+          className="mx-auto max-w-xl text-neutral-500"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+        >
           CS student at Michigan State University. I build full-stack
           applications with TypeScript, Python, Go, and cloud infrastructure.
-        </p>
+        </motion.p>
 
-        <div className="mt-8 flex justify-center gap-5">
+        <motion.div
+          className="mt-8 flex justify-center gap-5"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.65 }}
+        >
           <a
             href="https://linkedin.com/in/ziad-bakki"
             target="_blank"
@@ -25,7 +54,7 @@ export function HeroSection() {
             aria-label="LinkedIn"
           >
             <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.222 0h.003z" />
             </svg>
           </a>
           <a
@@ -49,9 +78,14 @@ export function HeroSection() {
               <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
             </svg>
           </a>
-        </div>
+        </motion.div>
 
-        <div className="mt-16">
+        <motion.div
+          className="mt-16"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
+        >
           <a
             href="#experience"
             className="inline-block animate-bounce text-neutral-600 transition-colors hover:text-neutral-400"
@@ -70,7 +104,7 @@ export function HeroSection() {
               <path d="M12 5v14M5 12l7 7 7-7" />
             </svg>
           </a>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
